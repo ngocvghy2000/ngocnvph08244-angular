@@ -1,0 +1,16 @@
+<div class="card h-100">
+  <a href="#"><img class="card-img-top" src="https://placehold.it/700x400" alt=""></a>
+  <div class="card-body">
+    <h4 class="card-title">
+      <a href="#">{{sanpham.name}}</a>
+    </h4>
+    <h5>${{sanpham.price}}</h5>
+    <p class="card-text">{{sanpham.description}}</p>
+     <p class="card-text">{{sanpham.status ? "Con " : "het"}}</p>
+     <button (click)="changeName()">Button</button><br><br>
+     <input type="text" [(ngModel)] = "sanpham.name" >
+  </div>
+  <div class="card-footer">
+    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+  </div>
+</div>
