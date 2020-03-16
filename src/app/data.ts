@@ -1,7 +1,24 @@
 import { Sanpham } from "./sanpham";
 export const Data: Sanpham[] = [
-  { name: "sua", price: 456,description:"ahuhu",status: true},
-   { name: "banh", price: 123,description:"ahihi",status: true},
-    {name: "keo", price: 999,description:"ahaha",status: true,}
-  
+  {
+    id: 1,
+    name: "sữa",
+    price: 456,
+    description: "mô tả sản phẩm 1",
+    status: true
+  },
+  {
+    id: 2,
+    name: "bánh",
+    price: 123,
+    description: "mô tả sản phẩm 2",
+    status: true
+  },
+  {
+    id: 3,
+    name: "kẹo",
+    price: 999,
+    description: "mô tả sản phẩm 3",
+    status: true
+  }
 ];

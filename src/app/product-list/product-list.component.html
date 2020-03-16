@@ -8,15 +8,13 @@
 					</h4>
 					<h5>${{sanpham.price}}</h5>
 					<p class="card-text">{{sanpham.description}}</p>
-					<p class="card-text">{{sanpham.status ? "Con " : "het"}}</p>
-					<button (click)="remove(sanpham.price)">Button</button><br><br>
+					<p class="card-text">{{sanpham.status ? "Còn hàng " : "Hếthàng"}}</p>
+          <!-- <input type="text" [(ngModel)] = "sanpham.name"> -->
+					<!-- <button (click)="remove(sanpham.price)">Button</button><br><br> -->
   </div>
 					<div class="card-footer">
 						<small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
 					</div>
 				</div>
-		</div>
-		<div *ngIf="tenSp">
-			{{tenSp.name}}
 		</div>
 	</div>
