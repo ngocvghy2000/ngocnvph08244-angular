@@ -14,9 +14,7 @@ export class ProductManagerComponent implements OnInit {
   ngOnInit() {
   }
   sp = Data;
-  checkSp : Sanpham;
   removeSp(sp){
     this.sp = this.sp.filter(s => s.id != sp.id);
-    this.checkSp = sp;
   }
 }

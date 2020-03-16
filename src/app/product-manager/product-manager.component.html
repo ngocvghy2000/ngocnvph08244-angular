@@ -9,8 +9,8 @@
 		</tr>
 		<tr *ngFor="let sanpham of sp">
 			<th>{{sanpham.id}}</th>
-			<th>{{sanpham.name}}</th>
-			<th>$ {{sanpham.price}}</th>
+				<th><input type="text" value="{{sanpham.name}}" [(ngModel)]="sanpham.name"></th>
+				<th><input type="text" value="{{sanpham.price}}" [(ngModel)]="sanpham.price"></th>
 			<th><button (click)="removeSp(sanpham)">Xoa</button></th>
 		</tr>
 	</thead>
