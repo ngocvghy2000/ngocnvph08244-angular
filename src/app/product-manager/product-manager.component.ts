@@ -1,20 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 import { Sanpham } from "../sanpham";
 import { Data } from "../data";
 
 @Component({
-  selector: 'app-product-manager',
-  templateUrl: './product-manager.component.html',
-  styleUrls: ['./product-manager.component.css']
+  selector: "app-product-manager",
+  templateUrl: "./product-manager.component.html",
+  styleUrls: ["./product-manager.component.css"]
 })
 export class ProductManagerComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+  ngOnInit() {}
   sp = Data;
-  removeSp(sp){
+  objsp: Sanpham;
+  removeSp(sp) {
     this.sp = this.sp.filter(s => s.id != sp.id);
+  }
+  show(a) {
+    this.objsp = a;
   }
 }
