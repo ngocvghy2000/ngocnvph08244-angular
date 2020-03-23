@@ -13,4 +13,7 @@ export class ProductService {
     let newObj = { id: 6, ...sp };
     this.products.push(newObj);
   }
+  getProduct(id) {
+     return this.products.find(product => product.id == id);
+  }
 }
