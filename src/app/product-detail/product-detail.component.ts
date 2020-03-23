@@ -14,6 +14,9 @@ export class ProductDetailComponent implements OnInit {
   constructor() { }
 @Input() objsp : Sanpham;
   ngOnInit() {
+    tgetProduct();
   }
+  getProduct(){
 
+  }
 }
