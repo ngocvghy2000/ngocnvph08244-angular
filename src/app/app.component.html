@@ -12,7 +12,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" routerLink="/about">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Services</a>
@@ -36,9 +36,10 @@
       <!-- /.col-lg-3 -->
 
       <div class="col-lg-9">
-        <app-product-manager></app-product-manager>
+        <router-outlet></router-outlet>
+        <!-- <app-product-manager></app-product-manager>
         <app-slide></app-slide>
-        <app-product-list></app-product-list>
+        <app-product-list></app-product-list> -->
        
       </div>
       <!-- /.col-lg-9 -->
