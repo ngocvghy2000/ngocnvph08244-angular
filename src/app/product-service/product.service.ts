@@ -1,20 +1,24 @@
 import { Injectable } from "@angular/core";
 import { Sanpham } from "../sanpham";
 import { Data } from "../data";
+import { HttpClient } from '@angular/common/http';
+import { Observable } from "rxjs";
 @Injectable()
 export class ProductService {
   products = Data;
-  constructor() {}
+  api = 'https://5e7b63700e04630016333282.mockapi.io';
+  constructor(
+    private http : HttpClient
+  ) {}
 
-  getListProduct() {
-    return this.products;
+  getListProduct() : Observable<Sanpham[]> {
+    return this.http.get<Sanpham[]>(`${this.api}/product`);
   }
   addProduct(sp) {
     let newObj = { id: 6, ...sp };
     this.products.push(newObj);
   }
   getProduct(id) {
-     return this.products.find(product => product.id == id);
+    return this.products.find(product => product.id == id);
   }
-  
 }

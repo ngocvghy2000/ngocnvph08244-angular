@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { Sanpham } from "../sanpham";
-import { Data } from "../data";
+import {ProductService} from "../product-service/product.service";
 
 @Component({
   selector: "app-product-manager",
@@ -8,12 +8,19 @@ import { Data } from "../data";
   styleUrls: ["./product-manager.component.css"]
 })
 export class ProductManagerComponent implements OnInit {
-  constructor() {}
+  constructor(
+     private productService : ProductService
+  ) {}
 
-  ngOnInit() {}
-  sp = Data;
+  ngOnInit() {
+   this.show()
+  }
+  sp : Sanpham[];
   removeSp(sp) {
     this.sp = this.sp.filter(s => s.id != sp.id);
+  }
+  show(){
+     this.productService.getListProduct().subscribe(response => this.sp = response);
   }
  
 }
