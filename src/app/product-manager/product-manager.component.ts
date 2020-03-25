@@ -12,11 +12,8 @@ export class ProductManagerComponent implements OnInit {
 
   ngOnInit() {}
   sp = Data;
-  objsp: Sanpham;
   removeSp(sp) {
     this.sp = this.sp.filter(s => s.id != sp.id);
   }
-  show(a) {
-    this.objsp = a;
-  }
+ 
 }
