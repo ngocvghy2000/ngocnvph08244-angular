@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from "@angular/core";
 import { Sanpham } from "../sanpham";
-import { Data } from "../data";
+// import { Data } from "../data";
 import { ProductService } from "../product-service/product.service";
 import { ActivatedRoute } from "@angular/router";
 
