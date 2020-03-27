@@ -18,7 +18,7 @@ export class ProductService {
     this.products.push(newObj);
   }
   getProduct(id){
-    // return this.products.find(product => product.id == id);
-    // return this.http.get<Sanpham>.find(products => products.id == id).(`${this.api}/product`);
+    return this.products.find(product => product.id == id);
+  //   // return this.http.get<Sanpham>.find(products => products.id == id).(`${this.api}/product`);
   }
 }

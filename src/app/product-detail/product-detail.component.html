@@ -2,7 +2,7 @@
   <!-- <div class="col-6">
     <img src="{{product.img}}" alt="" class="img-fluid">
   </div> -->
-  <div class="col-6">
+  <div class="col-6" *ngIf="product">
     <h2>{{product.name}}</h2>
     Giá : <span>{{product.price}}</span><br>
     Mô tả : <span>{{product.description}}</span>

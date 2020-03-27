@@ -1,60 +1,291 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item ">
-            <a class="nav-link" routerLinkActive="active" routerLink="/home">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"routerLinkActive="active" routerLink="/about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLinkActive="active"routerLink="/services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLinkActive="active"routerLink="/contact">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"routerLinkActive="active" routerLink="/product/manager">Manager</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<!-- <app-home></app-home> -->
+<div class="header-bottom">
+		<div class="wrap">
+			<div class="header-bottom-left">
+				<div class="logo">
+					<a href="index.html"><img src="https://www.upsieutoc.com/images/2020/03/28/logo.png" alt="" /></a>
+				</div>
+				<div class="menu">
+					<ul class="megamenu skyblue">
+						<li class="active grid"><a href="index.html">Home</a></li>
+						<li><a class="color6" href="other.html">Other</a></li>
+						<li><a class="color7" href="other.html">Purchase</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="header-bottom-right">
+				<div class="search">
+					<input type="text" name="s" class="textbox" value="Search" onfocus="this.value = '';"
+						onblur="if (this.value == '') {this.value = 'Search';}">
+					<input type="submit" value="Subscribe" id="submit" name="submit">
+					<div id="response"> </div>
+				</div>
+				<div class="tag-list">
+					<ul class="icon1 sub-icon1 profile_img">
+					</ul>
+					<ul class="icon1 sub-icon1 profile_img">
+						<li><a class="active-icon c2" href="#"> </a>
+						</li>
+					</ul>
+					<ul class="last">
+						<li><a href="#">Cart(0)</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<!-- start slider -->
+	<div id="fwslider">
+		<div class="slider_container">
+			<div class="slide">
+				<!-- Slide image -->
+				<img src="https://www.upsieutoc.com/images/2020/03/28/banner.jpg" alt="" />
+				<!-- /Slide image -->
+				<!-- Texts container -->
+				<div class="slide_content">
+					<div class="slide_content_wrap">
+						<!-- Text title -->
+						<h4 class="title">Aluminium Club</h4>
+						<!-- /Text title -->
 
-  <!-- Page Content -->
-  <div class="container">
- <router-outlet></router-outlet>
-    <div class="row">
+						<!-- Text description -->
+						<p class="description">Experiance ray ban</p>
+						<!-- /Text description -->
+					</div>
+				</div>
+				<!-- /Texts container -->
+			</div>
+			<!-- /Duplicate to create more slides -->
+			<div class="slide">
+				<img src="https://www.upsieutoc.com/images/2020/03/28/banner1.jpg" alt="" />
+				<div class="slide_content">
+					<div class="slide_content_wrap">
+						<h4 class="title">consectetuer adipiscing </h4>
+						<p class="description">diam nonummy nibh euismod</p>
+					</div>
+				</div>
+			</div>
+			<!--/slide -->
+		</div>
+		<div class="timers"></div>
+		<div class="slidePrev"><span></span></div>
+		<div class="slideNext"><span></span></div>
+	</div>
+	<!--/slider -->
+	<div class="main">
+    
+		<div class="wrap">
+			<div class="section group">
+				<div class="cont span_2_of_3">
+          
+					<h2 class="head">Featured Products</h2>
+          
+          <!-- <router-outlet></router-outlet> -->
+          <app-product-list></app-product-list>
+          <app-product-manager></app-product-manager>
+          <app-product-detail></app-product-detail>
+          <router-outlet></router-outlet>
+					<!-- <div class="top-box">
+						<div class="col_1_of_3 span_1_of_3">
+							<a href="single.html">
+								<div class="inner_content clearfix">
+									<div class="product_image">
+										<img src="https://www.upsieutoc.com/images/2020/03/28/pic6.jpg" alt="" />
+									</div>
+									<div class="sale-box"><span class="on_sale title_shop">New</span></div>
+									<div class="price">
+										<div class="cart-left">
+											<p class="title">Lorem Ipsum simply</p>
+											<div class="price1">
+												<span class="actual">$12.00</span>
+											</div>
+										</div>
+										<div class="cart-right"> </div>
+										<div class="clear"></div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col_1_of_3 span_1_of_3">
+							<a href="single.html">
+								<div class="inner_content clearfix">
+									<div class="product_image">
+										<img src="https://www.upsieutoc.com/images/2020/03/28/pic7.jpg" alt="" />
+									</div>
+									<div class="sale-box1"><span class="on_sale title_shop">Sale</span></div>
+									<div class="price">
+										<div class="cart-left">
+											<p class="title">Lorem Ipsum simply</p>
+											<div class="price1">
+												<span class="reducedfrom">$66.00</span>
+												<span class="actual">$12.00</span>
+											</div>
+										</div>
+										<div class="cart-right"> </div>
+										<div class="clear"></div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col_1_of_3 span_1_of_3">
+							<a href="single.html">
+								<div class="inner_content clearfix">
+									<div class="product_image">
+										<img src="https://www.upsieutoc.com/images/2020/03/28/pic8.jpg" alt="" />
+									</div>
+									<div class="sale-box"><span class="on_sale title_shop">New</span></div>
+									<div class="price">
+										<div class="cart-left">
+											<p class="title">Lorem Ipsum simply</p>
+											<div class="price1">
+												<span class="actual">$12.00</span>
+											</div>
+										</div>
+										<div class="cart-right"> </div>
+										<div class="clear"></div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="clear"></div>
+					</div> -->
+				</div>
+				<div class="rsidebar span_1_of_left">
+					<div class="top-border"> </div>
+					<!-- <div class="border">
+						<script src="js/jquery.nivo.slider.js"></script>
+						<script type="text/javascript">
+							$(window).load(function () {
+								$('#slider').nivoSlider();
+							}); -->
+						<!-- </script> -->
+						<!-- <div class="slider-wrapper theme-default">
+							<div id="slider" class="nivoSlider">
+								<img src="https://www.upsieutoc.com/images/2020/03/28/t-img1.jpg" alt="" />
+								<img src="https://www.upsieutoc.com/images/2020/03/28/t-img2.jpg" alt="" />
+								<img src="https://www.upsieutoc.com/images/2020/03/28/t-img3.jpg" alt="" />
+							</div>
+						</div> -->
+						<!-- <div class="btn"><a href="">Check it Out</a></div> -->
+					<!-- </div> -->
+					<div class="top-border"> </div>
+					<div class="sidebar-bottom">
+						<h2 class="m_1">Newsletters<br> Signup</h2>
+						<p class="m_text">Lorem ipsum dolor sit amet, consectetuer</p>
+						<div class="subscribe">
+							<form>
+								<input name="userName" type="text" class="textbox">
+								<input type="submit" value="Subscribe">
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer-top">
+			<div class="wrap">
+				<div class="section group example">
+					<div class="col_1_of_2 span_1_of_2">
+						<ul class="f-list">
+							<li><img src="https://www.upsieutoc.com/images/2020/03/28/2.png"><span class="f-text">Free Shipping on orders over $ 100</span>
+								<div class="clear"></div>
+							</li>
+						</ul>
+					</div>
+					<div class="col_1_of_2 span_1_of_2">
+						<ul class="f-list">
+							<li><img src="https://www.upsieutoc.com/images/2020/03/28/3.png"><span class="f-text">Call us! toll free-222-555-6666 </span>
+								<div class="clear"></div>
+							</li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-middle">
+			<div class="wrap">
 
-      
-      <!-- /.col-lg-3 -->
 
-      <div class="col-lg-9">
-       
-        <!-- <app-product-manager></app-product-manager>
-        <app-slide></app-slide>
-        <app-product-list></app-product-list> -->
-       
-      </div>
-      <!-- /.col-lg-9 -->
 
-    </div>
-    <!-- /.row -->
 
-  </div>
-  <!-- /.container -->
 
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
-    </div>
-    <!-- /.container -->
-  </footer>
+
+				<div class="section group example">
+					<div class="col_1_of_f_1 span_1_of_f_1">
+						<div class="section group example">
+							<div class="col_1_of_f_2 span_1_of_f_2" style="margin: 0 170px;">
+								<h3>From Twitter</h3>
+								<div class="recent-tweet">
+									<div class="recent-tweet-icon">
+										<span> </span>
+									</div>
+									<div class="recent-tweet-info">
+										<p>Ds which don't look even slightly believable. If you are <a href="#">going to
+												use nibh euismod</a> tincidunt ut laoreet adipisicing</p>
+									</div>
+									<div class="clear"> </div>
+								</div>
+								<div class="recent-tweet">
+									<div class="recent-tweet-icon">
+										<span> </span>
+									</div>
+									<div class="recent-tweet-info">
+										<p>Ds which don't look even slightly believable. If you are <a href="#">going to
+												use nibh euismod</a> tincidunt ut laoreet adipisicing</p>
+									</div>
+									<div class="clear"> </div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="col_1_of_f_1 span_1_of_f_1">
+						<div class="section group example">
+							<div class="col_1_of_f_2 span_1_of_f_2">
+								<h3>Information</h3>
+								<ul class="f-list1">
+									<li><a href="#">Duis autem vel eum iriure </a></li>
+									<li><a href="#">anteposuerit litterarum formas </a></li>
+									<li><a href="#">Tduis dolore te feugait nulla</a></li>
+									<li><a href="#">Duis autem vel eum iriure </a></li>
+									<li><a href="#">anteposuerit litterarum formas </a></li>
+									<li><a href="#">Tduis dolore te feugait nulla</a></li>
+								</ul>
+							</div>
+							<div class="col_1_of_f_2 span_1_of_f_2">
+								<h3>Contact us</h3>
+								<div class="company_address">
+									<p>500 Lorem Ipsum Dolor Sit,</p>
+									<p>22-56-2-9 Sit Amet, Lorem,</p>
+									<p>USA</p>
+									<p>Phone:(00) 222 666 444</p>
+									<p>Fax: (000) 000 00 00 0</p>
+									<p>Email: <span>mail[at]leoshop.com</span></p>
+
+								</div>
+								<div class="social-media">
+									<ul>
+										<li> <span class="simptip-position-bottom simptip-movable"
+												data-tooltip="Google"><a href="#" target="_blank"> </a></span></li>
+										<li><span class="simptip-position-bottom simptip-movable"
+												data-tooltip="Linked in"><a href="#" target="_blank"> </a> </span></li>
+										<li><span class="simptip-position-bottom simptip-movable" data-tooltip="Rss"><a
+													href="#" target="_blank"> </a></span></li>
+										<li><span class="simptip-position-bottom simptip-movable"
+												data-tooltip="Facebook"><a href="#" target="_blank"> </a></span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+	</div>
