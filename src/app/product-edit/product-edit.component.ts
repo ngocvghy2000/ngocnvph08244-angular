@@ -26,6 +26,6 @@ export class ProductEditComponent implements OnInit {
     });
   }
   update(){
-    this.productService.updateProduct(this.product).subscribe(data => this.router.navigateByUrl("/home"))
+    this.productService.updateProduct(this.product).subscribe(data => this.router.navigateByUrl("/product/manager"))
   }
 }
