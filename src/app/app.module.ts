@@ -17,6 +17,7 @@ import { ContactComponent } from "./contact/contact.component";
 import { NotfoundComponent } from "./notfound/notfound.component";
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { ProductEditComponent } from './product-edit/product-edit.component';
 @NgModule({
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   declarations: [
@@ -32,7 +33,8 @@ import { FooterComponent } from './footer/footer.component';
     ContactComponent,
     NotfoundComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ProductEditComponent
   ],
   bootstrap: [AppComponent],
   providers: [ProductService]

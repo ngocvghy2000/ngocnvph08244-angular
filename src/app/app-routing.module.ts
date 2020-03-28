@@ -8,6 +8,7 @@ import { ProductDetailComponent } from "./product-detail/product-detail.componen
 import { ProductManagerComponent } from "./product-manager/product-manager.component";
 import { ProductListComponent } from "./product-list/product-list.component";
 import { NotfoundComponent } from "./notfound/notfound.component";
+import { ProductEditComponent } from "./product-edit/product-edit.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
@@ -17,10 +18,11 @@ const routes: Routes = [
   { path: "contact", component: ContactComponent },
   { path: "product/detail", component: ProductDetailComponent },
   { path: "product/detail/:id", component: ProductDetailComponent },
+  { path: "product/edit/:id", component: ProductEditComponent },
   { path: "product/manager", component: ProductManagerComponent },
   { path: "product/list", component: ProductListComponent },
   { path: "**", redirectTo: "404", pathMatch: "full" },
-  { path: "404", component: NotfoundComponent },
+  { path: "404", component: NotfoundComponent }
 ];
 
 @NgModule({

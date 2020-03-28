@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from "@angular/core";
 import { Sanpham } from "../sanpham";
-// import { Data } from "../data";
 import { ProductService } from "../product-service/product.service";
 import { ActivatedRoute } from "@angular/router";
 
@@ -13,14 +12,16 @@ export class ProductDetailComponent implements OnInit {
   product: Sanpham;
   constructor(
     private productService: ProductService,
-    private activatedRoute: ActivatedRoute
+    private router: ActivatedRoute
   ) {}
   ngOnInit() {
     this.getProduct();
   }
   getProduct() {
-    this.activatedRoute.params.subscribe(param => {this.product = this.productService.getProduct(param.id);
-    console.log(1);
+    this.router.params.subscribe(param => {
+      this.productService.getProduct(param.id).subscribe(data => {
+        this.product = data;
+      });
     });
   }
 }

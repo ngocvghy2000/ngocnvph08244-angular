@@ -1,22 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 import { Sanpham } from "../sanpham";
-import { Data } from "../data";
-import {ProductService} from "../product-service/product.service";
+import { ProductService } from "../product-service/product.service";
 @Component({
-  selector: 'app-add-product',
-  templateUrl: './add-product.component.html',
-  styleUrls: ['./add-product.component.css']
+  selector: "app-add-product",
+  templateUrl: "./add-product.component.html",
+  styleUrls: ["./add-product.component.css"]
 })
 export class AddProductComponent implements OnInit {
-  product : Sanpham = new Sanpham();
-  constructor(
-    private productService :ProductService
-  ) { }
+  product: Sanpham = new Sanpham();
+  constructor(private productService: ProductService) {}
 
-  ngOnInit() {
-  }
-  addProduct(){
+  ngOnInit() {}
+  addProduct() {
     this.productService.addProduct(this.product);
-     
   }
 }
