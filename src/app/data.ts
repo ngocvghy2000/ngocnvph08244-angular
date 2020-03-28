@@ -6,7 +6,7 @@ export const Data: Sanpham[] = [
     price: 456,
     description: "mô tả sản phẩm 1",
     status: true,
-    img: "asda",
+    img: "",
   },
   {
     id: 2,
@@ -14,7 +14,7 @@ export const Data: Sanpham[] = [
     price: 123,
     description: "mô tả sản phẩm 2",
     status: true,
-    img: "asa",
+    img: "",
   },
   {
     id: 3,
@@ -22,6 +22,6 @@ export const Data: Sanpham[] = [
     price: 999,
     description: "mô tả sản phẩm 3",
     status: true,
-    img: "aasd",
+    img: "",
   }
 ];
