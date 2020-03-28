@@ -13,9 +13,10 @@ import { AddProductComponent } from "./add-product/add-product.component";
 import { ProductService } from "./product-service/product.service";
 import { AboutComponent } from "./about/about.component";
 import { HomeComponent } from "./home/home.component";
-import { ServicesComponent } from "./services/services.component";
 import { ContactComponent } from "./contact/contact.component";
 import { NotfoundComponent } from "./notfound/notfound.component";
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 @NgModule({
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   declarations: [
@@ -28,9 +29,10 @@ import { NotfoundComponent } from "./notfound/notfound.component";
     AddProductComponent,
     AboutComponent,
     HomeComponent,
-    ServicesComponent,
     ContactComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   bootstrap: [AppComponent],
   providers: [ProductService]

@@ -16,9 +16,10 @@ export class ProductManagerComponent implements OnInit {
    this.show()
   }
   sp : Sanpham[];
-  removeSp(sp) {
-    this.sp = this.sp.filter(s => s.id != sp.id);
-  }
+  // removeSp(sp) {
+  //   this.sp = this.sp.filter(s => s.id != sp.id);
+  //   console.log(1);
+  // }
   show(){
      this.productService.getListProduct().subscribe(response => this.sp = response);
   }

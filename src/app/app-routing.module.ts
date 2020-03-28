@@ -3,7 +3,6 @@ import { Routes, RouterModule } from "@angular/router";
 import { HomeComponent } from "./home/home.component";
 import { AddProductComponent } from "./add-product/add-product.component";
 import { AboutComponent } from "./about/about.component";
-import { ServicesComponent } from "./services/services.component";
 import { ContactComponent } from "./contact/contact.component";
 import { ProductDetailComponent } from "./product-detail/product-detail.component";
 import { ProductManagerComponent } from "./product-manager/product-manager.component";
@@ -14,7 +13,6 @@ const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
   { path: "home", component: HomeComponent },
   { path: "add-product", component: AddProductComponent },
-  { path: "services", component: ServicesComponent },
   { path: "about", component: AboutComponent },
   { path: "contact", component: ContactComponent },
   { path: "product/detail", component: ProductDetailComponent },

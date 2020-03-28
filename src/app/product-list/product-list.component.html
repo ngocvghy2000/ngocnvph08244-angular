@@ -20,6 +20,50 @@
 		</a>
 	</div>
 </div>
+<div class="top-box">
+	<div class="col_1_of_3 span_1_of_3" *ngFor="let sanpham of products">
+		<a routerLink="/product/detail/{{sanpham.id}}" (click)="show()">
+			<div class="inner_content clearfix">
+				<div class="product_image">
+					<img src="https://www.upsieutoc.com/images/2020/03/28/pic.jpg" alt="" />
+									</div>
+					<div class="sale-box"><span class="on_sale title_shop">New</span></div>
+					<div class="price">
+						<div class="cart-left">
+							<p class="title">{{sanpham.name}}</p>
+							<div class="price1">
+								<span class="actual">${{sanpham.price}}</span>
+							</div>
+						</div>
+						<div class="cart-right"> </div>
+						<div class="clear"></div>
+					</div>
+				</div>
+		</a>
+	</div>
+</div>
+<div class="top-box">
+	<div class="col_1_of_3 span_1_of_3" *ngFor="let sanpham of products">
+		<a routerLink="/product/detail/{{sanpham.id}}" (click)="show()">
+			<div class="inner_content clearfix">
+				<div class="product_image">
+					<img src="https://www.upsieutoc.com/images/2020/03/28/pic.jpg" alt="" />
+									</div>
+					<div class="sale-box"><span class="on_sale title_shop">New</span></div>
+					<div class="price">
+						<div class="cart-left">
+							<p class="title">{{sanpham.name}}</p>
+							<div class="price1">
+								<span class="actual">${{sanpham.price}}</span>
+							</div>
+						</div>
+						<div class="cart-right"> </div>
+						<div class="clear"></div>
+					</div>
+				</div>
+		</a>
+	</div>
+</div>
 
 <!-- </a>
 	<div class="col_1_of_3 span_1_of_3">
